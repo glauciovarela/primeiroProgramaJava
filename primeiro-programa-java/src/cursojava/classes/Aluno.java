@@ -19,7 +19,7 @@ public class Aluno extends Pessoa {
 	public List<Disciplina> getDisciplinas() {
 		return disciplinas;
 	}
-	
+	/* teste teste */
 
 	public Aluno() {
 

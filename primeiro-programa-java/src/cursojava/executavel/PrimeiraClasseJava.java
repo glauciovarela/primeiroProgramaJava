@@ -28,8 +28,8 @@ public class PrimeiraClasseJava {
 			
 			LerArquivo();
 			
-			/*File fil = new File ("C://lines.txt");
-			Scanner scanner = new Scanner(fil);*/
+		//File fil = new File ("C://lines.txt");
+		//Scanner scanner = new Scanner(fil);
 		
 		
 		String login = JOptionPane.showInputDialog("Informe o login");
@@ -177,6 +177,7 @@ public class PrimeiraClasseJava {
 		try {
 			File fil = new File("C: //lines.txt");
 			Scanner scanner = new Scanner(fil); 
+			
 		}catch (FileNotFoundException e) {
 				throw new ExcecaoProcessarNota (e.getMessage());
 }
