@@ -13,6 +13,10 @@ public class Pessoa {
 		return idade;
 	}
 	
+	public void steIdade(int idade) {
+		this.idade = idade;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
