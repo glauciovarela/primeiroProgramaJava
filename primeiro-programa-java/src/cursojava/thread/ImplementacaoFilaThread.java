@@ -3,6 +3,8 @@ package cursojava.thread;
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
+
+
 public class ImplementacaoFilaThread extends Thread {
 	
 	private static ConcurrentLinkedQueue<ObjetoFilaThread> pilha_fila =
