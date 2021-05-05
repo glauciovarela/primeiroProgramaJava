@@ -23,6 +23,13 @@ public class ImplementacaoFilaThread extends Thread {
 			ObjetoFilaThread processar = (ObjetoFilaThread) iteracao.next();
 			
 			
+			System.out.println("----------------------------------");
+			
+			System.out.println(processar.getEmail());
+			System.out.println(processar.getNome());
+			
+			System.out.println("----------------------------------");
+			
 			iteracao.remove();
 			
 			try {
