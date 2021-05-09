@@ -19,11 +19,10 @@ public class ImplementacaoFilaThread extends Thread {
 		
 		
 		while(true) {
-
+		
+		synchronized (pilha_fila) {
+		
 			Iterator iteracao = pilha_fila.iterator();
-		
-		synchronized (iteracao) {
-		
 			while (iteracao.hasNext()) {
 			
 				ObjetoFilaThread processar = (ObjetoFilaThread) iteracao.next();
@@ -45,18 +44,17 @@ public class ImplementacaoFilaThread extends Thread {
 			}
 			
 		}
+	
 	}
 		
 		try {
 			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		
 		}
-	
-}
-	
-}
-	
+	}
 }
 		
 		
